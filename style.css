@@ -106,7 +106,42 @@ p{
 }
 
 
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 18px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255,255,255,.9);
+    backdrop-filter: blur(12px);
+    z-index: 1000;
+    box-shadow: 0 5px 20px rgba(0,0,0,.08);
+}
 
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo a{
+    font-size: 32px;
+    font-weight: 800;
+    color: var(--primary);
+}
+
+header button{
+    padding: 12px 28px;
+    border: 2px solid var(--primary);
+    border-radius: 50px;
+    background: #fff;
+    color: var(--dark);
+    font-weight: 700;
+    cursor: pointer;
+}
 
 /*====================================
 HERO SECTION
@@ -1097,17 +1132,22 @@ section{
 }
 
 header{
-    padding:15px 20px;
+    padding:15px 5%;
 }
 
 .logo a{
     font-size:26px;
 }
 
-header button{
-    padding:12px 22px;
-    font-size:14px;
+.logo a{
+    font-size: 28px;
 }
+
+header button{
+    padding: 10px 22px;
+    font-size: 14px;
+}
+
 
 .hero{
     padding-top:120px;
